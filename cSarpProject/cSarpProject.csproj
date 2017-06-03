@@ -14,4 +14,7 @@
   </ItemGroup>
 
 
+  <ItemGroup>
+    <Folder Include="Views\Student\" />
+  </ItemGroup>
 </Project>

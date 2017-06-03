@@ -1,3 +1,15 @@
 ﻿<Properties StartupConfiguration="{A033DC28-2AE2-4898-A060-C8A34EE14CC0}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="cSarpProject/Views/Student/List.cshtml">
+    <Files>
+      <File FileName="cSarpProject/Controllers/StudentController.cs" Line="14" Column="34" />
+      <File FileName="cSarpProject/Views/Student/List.cshtml" Line="2" Column="30" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.cSarpProject PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
 </Properties>
