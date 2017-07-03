@@ -11,9 +11,10 @@ namespace cSarpProject.Controllers
     public class StudentController : Controller
     {
         // GET: /<controller>/
-        public IActionResult List()
-        {
-            return View();
-        }
+
+		public IActionResult Login1()
+		{
+			return View();
+		}
     }
 }

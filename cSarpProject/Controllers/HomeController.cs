@@ -13,19 +13,22 @@ namespace cSarpProject.Controllers
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult PhotoGallary()
         {
             ViewData["Message"] = "Your application description page.";
 
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult About()
         {
-            ViewData["Message"] = "Your contact page.";
-
             return View();
         }
+
+		public IActionResult Login()
+		{
+			return View();
+		}
 
         public IActionResult Error()
         {

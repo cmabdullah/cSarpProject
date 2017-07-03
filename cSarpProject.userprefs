@@ -1,9 +1,13 @@
 ﻿<Properties StartupConfiguration="{A033DC28-2AE2-4898-A060-C8A34EE14CC0}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="cSarpProject/Views/Shared/_Layout.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="cSarpProject/Controllers/StudentController.cs">
     <Files>
-      <File FileName="cSarpProject/Views/Student/List.cshtml" Line="51" Column="5" />
-      <File FileName="cSarpProject/Program.cs" Line="21" Column="1" />
-      <File FileName="cSarpProject/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="cSarpProject/Views/Student/List.cshtml" Line="10" Column="1" />
+      <File FileName="cSarpProject/Views/Shared/_Layout.cshtml" Line="36" Column="68" />
+      <File FileName="cSarpProject/Views/Home/Login.cshtml" Line="1" Column="10" />
+      <File FileName="cSarpProject/Controllers/StudentController.cs" Line="14" Column="1" />
+      <File FileName="cSarpProject/Startup.cs" Line="1" Column="1" />
+      <File FileName="cSarpProject/Program.cs" Line="22" Column="10" />
+      <File FileName="cSarpProject/Views/Home/Index.cshtml" Line="1" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
