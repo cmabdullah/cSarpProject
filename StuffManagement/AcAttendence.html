@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AcAttendence </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/dist/css/style.css">
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+      <link href = "jquery_ui/jquery-ui.css" rel = "stylesheet">
+
+  <script src="jquery/jquery.min.js"></script>
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src = "jquery_ui/jquery-1.10.2.js"></script>
+      <script src = "jquery_ui/jquery-ui.js"></script>
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+<!--
+https://www.tutorialspoint.com/jqueryui/jqueryui_datepicker.htm
+http://www.bootstraptoggle.com/-->
+      <script>
+         $(function() {
+            $( "#datepicker-13" ).datepicker();
+            $( "#datepicker-13" ).datepicker("show");
+         });
+      </script>
+
+</head>
+<body>
+
+<!--NAV BAR-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    <!--  <a class="navbar-brand" href="#">WebSiteName</a>-->
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="#">Salary</a></li>
+      <li><a href="#">Attendence</a></li>
+      <li><a href="#">Leav</a></li>
+      <li><a href="#">join</a></li>
+      <li><a href="#">Notification</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
+      <li><a href="Login.html" data-toggle="modal" data-target="#login-modal"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!--Nav bar end-->
+
+<div align= "center">
+      <p>Enter Date: <input type = "text" id = "datepicker-13">Your 
+  Attendence: <label> <input data-toggle="toggle" type="checkbox"> </label>
+
+  </p>
+</div>
+</body>
+</html>

@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>AdcPanel </title>
+  <title>Accounce Salary</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="jquery_ui/jquery-ui.css">
+  <!--<link rel="stylesheet" href="/resources/demos/style.css">
+-->
   <script src="jquery/jquery.min.js"></script>
   <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+
+  <script src="jquery_ui/jquery-ui.js"></script>
+  <script>
+$(document).ready(function(){
+
+    $(".monthPicker").datepicker({ 
+        dateFormat: 'mm-yy',
+        changeMonth: true,
+        changeYear: true,
+        showButtonPanel: true,
+
+        onClose: function(dateText, inst) {  
+            var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val(); 
+            var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val(); 
+            $(this).val($.datepicker.formatDate('yy-mm', new Date(year, month, 1)));
+        }
+    });
+
+    $(".monthPicker").focus(function () {
+        $(".ui-datepicker-calendar").hide();
+        $("#ui-datepicker-div").position({
+            my: "center top",
+            at: "center bottom",
+            of: $(this)
+        });    
+    });
+    
+});
+  </script>
+
+
+
 </head>
 <body>
 
@@ -36,33 +73,71 @@
 
 
 
-
-
-<div class="container" align="center" class="form-group">
-  <h2>Ac Salary</h2>
- 
-  <form class="form-inline" action="/action_page.php">
-  <table cellspacing="2" cellpadding="2" border="0">
-  <tr>
-
-      <td><label for="email">Email:</label></td>
-      <td><input type="email" class="form-control" id="email" placeholder="Enter email" name="email"></td>
-      </tr>
-
-      <td><label for="email">ID</label></td>
-      <td><input type="email" class="form-control" id="email" placeholder="Enter ID" name="email"></td>
-      </tr>
+<label for="month">Month: </label>
+<input type="text" id="month" name="month" class="monthPicker" />
 
 
 
-  <tr>
-    <td>&nbsp;</td>
 
-    <td><button type="submit" class="btn btn-default">Submit</button></td>
-      </tr>
-  </table>
+
+
+
+<div class="container">
+<!--  <h2>Creat New ID</h2>-->
+  <form class="form-horizontal" action="/action_page.php">
+
+
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Basic:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Basic" name="email">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">House Rent:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="House Rent" name="email">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Medical:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Medical" name="email">
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Education Fee:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Education Fee" name="email">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Bonus:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Bonus" name="email">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Account status:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Account status" name="email">
+      </div>
+    </div>
+
+
   </form>
 </div>
+
+
+
+
 
 
 

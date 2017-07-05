@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{A033DC28-2AE2-4898-A060-C8A34EE14CC0}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="cSarpProject/Controllers/StudentController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="cSarpProject/Startup.cs">
     <Files>
       <File FileName="cSarpProject/Views/Student/List.cshtml" Line="10" Column="1" />
       <File FileName="cSarpProject/Views/Shared/_Layout.cshtml" Line="36" Column="68" />
