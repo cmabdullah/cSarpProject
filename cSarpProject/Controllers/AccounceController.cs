@@ -8,24 +8,31 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace cSarpProject.Controllers
 {
-    public class AdminController : Controller
+    public class AccounceController : Controller
     {
         // GET: /<controller>/
         public IActionResult Index()
         {
             return View();
         }
-		public IActionResult IDCreation()
+		public IActionResult Salary()
+		{
+			return View();
+		}
+		public IActionResult Attendence()
 		{
 			return View();
 		}
 
-
-		public IActionResult UpdateAdBio()
+		public IActionResult Join()
 		{
 			return View();
 		}
-		public IActionResult Log()
+		public IActionResult Leave()
+		{
+			return View();
+		}
+		public IActionResult Notice()
 		{
 			return View();
 		}

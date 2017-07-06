@@ -8,6 +8,7 @@
     <environment names="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
+			<link rel="stylesheet" href="~/lib/jquery_ui/jquery-ui.css">
     </environment>
     <environment names="Staging,Production">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -15,6 +16,9 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
+
+		
+
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -30,11 +34,13 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Admin" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Admin" asp-action="IDCreation">Create ID</a></li>
-                    <li><a asp-area="" asp-controller="Admin" asp-action="UpdateAdBio">Update Profile</a></li>
-                    <li><a asp-area="" asp-controller="Admin" asp-action="Index">Notification</a></li>
-                    <li><a asp-area="" asp-controller="Admin" asp-action="Log">Log</a></li>
+                    <li><a asp-area="" asp-controller="Accounce" asp-action="Index">Home</a></li>
+                    <li><a asp-area="" asp-controller="Accounce" asp-action="Salary">Salary</a></li>
+                    <li><a asp-area="" asp-controller="Accounce" asp-action="Attendence">Attendence</a></li>
+                    <li><a asp-area="" asp-controller="Accounce" asp-action="Leave">Leave</a></li>
+                    <li><a asp-area="" asp-controller="Accounce" asp-action="Join">Join</a></li>						
+                    <li><a asp-area="" asp-controller="Accounce" asp-action="Notice">Notice Send</a></li>
+
 
 			</ul>			
      <ul class="nav navbar-nav navbar-right">
@@ -71,6 +77,37 @@
                 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
+
+            <!--by cm-->
+  <script src="~/lib/jquery_ui/jquery-ui.js"></script>
+
+
+
+  <script src="~/lib/bootstrap/dist//js/bootstrap.min.js"></script>
+      <script src = "~/lib/jquery_ui/jquery-1.12.4.js"></script>
+      <script src = "~/lib/jquery_ui/jquery-ui.js"></script>
+
+        
+  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+        <script>
+         $(function() {
+            $( "#datepicker-13" ).datepicker();
+            $( "#datepicker-13" ).datepicker("show");
+         });
+      </script>
+
+        
+        <!--script end -->
+
+
+
+
+
+
+
+
+			
     </environment>
 
     @RenderSection("Scripts", required: false)

@@ -1450,6 +1450,12 @@ img {
     max-width: 100%;
     height: auto;
 }
+/**
+.carousel {
+    width: 940px;
+    height: 360px;
+}
+    */
 
 .img-rounded {
     border-radius: 6px;
