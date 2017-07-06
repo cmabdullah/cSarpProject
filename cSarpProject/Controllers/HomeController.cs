@@ -30,6 +30,15 @@ namespace cSarpProject.Controllers
 			return View();
 		}
 
+		public IActionResult AdcPanel()
+		{
+			return View();
+		}
+
+
+
+
+
         public IActionResult Error()
         {
             return View();

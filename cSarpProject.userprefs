@@ -1,13 +1,14 @@
 ﻿<Properties StartupConfiguration="{A033DC28-2AE2-4898-A060-C8A34EE14CC0}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="cSarpProject/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="cSarpProject/Views/Shared/_Layout_admin.cshtml">
     <Files>
-      <File FileName="cSarpProject/Views/Student/List.cshtml" Line="10" Column="1" />
-      <File FileName="cSarpProject/Views/Shared/_Layout.cshtml" Line="36" Column="68" />
-      <File FileName="cSarpProject/Views/Home/Login.cshtml" Line="1" Column="10" />
-      <File FileName="cSarpProject/Controllers/StudentController.cs" Line="14" Column="1" />
-      <File FileName="cSarpProject/Startup.cs" Line="1" Column="1" />
-      <File FileName="cSarpProject/Program.cs" Line="22" Column="10" />
-      <File FileName="cSarpProject/Views/Home/Index.cshtml" Line="1" Column="16" />
+      <File FileName="cSarpProject/Views/Shared/_Layout.cshtml" Line="35" Column="95" />
+      <File FileName="cSarpProject/Views/Home/Login.cshtml" Line="2" Column="1" />
+      <File FileName="cSarpProject/Controllers/HomeController.cs" Line="37" Column="9" />
+      <File FileName="cSarpProject/Views/Admin/AdcPanel.cshtml" Line="4" Column="1" />
+      <File FileName="cSarpProject/Views/Home/Index.cshtml" Line="2" Column="14" />
+      <File FileName="cSarpProject/Views/Shared/_Layout_admin.cshtml" Line="39" Column="9" />
+      <File FileName="cSarpProject/Controllers/AdminController.cs" Line="14" Column="38" />
+      <File FileName="cSarpProject/Controllers/StudentController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
