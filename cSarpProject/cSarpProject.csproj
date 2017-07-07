@@ -18,5 +18,6 @@
     <Folder Include="Views\Student\" />
     <Folder Include="Views\Admin\" />
     <Folder Include="Views\Accounce\" />
+    <Folder Include="Views\Teacher\" />
   </ItemGroup>
 </Project>
