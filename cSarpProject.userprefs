@@ -1,14 +1,8 @@
 ﻿<Properties StartupConfiguration="{A033DC28-2AE2-4898-A060-C8A34EE14CC0}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="cSarpProject/Controllers/TeacherController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="cSarpProject/Views/Shared/_Layout_Cm.cshtml">
     <Files>
-      <File FileName="cSarpProject/Views/Home/Index.cshtml" Line="65" Column="32" />
-      <File FileName="cSarpProject/Controllers/AccounceController.cs" Line="1" Column="1" />
-      <File FileName="cSarpProject/Views/Teacher/Attendence.cshtml" Line="2" Column="28" />
-      <File FileName="cSarpProject/Views/Teacher/Index.cshtml" Line="2" Column="28" />
-      <File FileName="cSarpProject/Views/Teacher/Leave.cshtml" Line="2" Column="28" />
-      <File FileName="cSarpProject/Views/Teacher/Notice.cshtml" Line="6" Column="23" />
-      <File FileName="cSarpProject/Views/Teacher/Salary.cshtml" Line="2" Column="28" />
-      <File FileName="cSarpProject/Controllers/TeacherController.cs" Line="11" Column="18" />
+      <File FileName="cSarpProject/Views/Shared/_Layout_Cm.cshtml" Line="67" Column="96" />
+      <File FileName="cSarpProject/wwwroot/js/site.min.js" Line="37" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

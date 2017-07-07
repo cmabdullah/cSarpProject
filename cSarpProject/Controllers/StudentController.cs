@@ -12,7 +12,7 @@ namespace cSarpProject.Controllers
     {
         // GET: /<controller>/
 
-		public IActionResult Login1()
+		public IActionResult Index()
 		{
 			return View();
 		}
