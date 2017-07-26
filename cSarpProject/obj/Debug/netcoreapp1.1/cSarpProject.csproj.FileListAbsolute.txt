@@ -7,3 +7,4 @@
 /Users/abdullah/Documents/cSarpProject/cSarpProject/obj/Debug/netcoreapp1.1/cSarpProject.AssemblyInfo.cs
 /Users/abdullah/Documents/cSarpProject/cSarpProject/obj/Debug/netcoreapp1.1/cSarpProject.dll
 /Users/abdullah/Documents/cSarpProject/cSarpProject/obj/Debug/netcoreapp1.1/cSarpProject.pdb
+/Users/abdullah/Documents/cSarpProject/cSarpProject/obj/Debug/netcoreapp1.1/cSarpProject.csprojResolveAssemblyReference.cache

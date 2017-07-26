@@ -1,10 +1,5 @@
 ﻿<Properties StartupConfiguration="{A033DC28-2AE2-4898-A060-C8A34EE14CC0}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="cSarpProject/Views/Shared/_Layout_Cm.cshtml">
-    <Files>
-      <File FileName="cSarpProject/Views/Shared/_Layout_Cm.cshtml" Line="67" Column="96" />
-      <File FileName="cSarpProject/wwwroot/js/site.min.js" Line="37" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
