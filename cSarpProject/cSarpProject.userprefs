@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{43DAA3A7-3480-4FB5-A1BE-52ED579CD2EA}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
+    <Files>
+      <File FileName="Data/TestContext.cs" Line="19" Column="28" />
+      <File FileName="appsettings.json" Line="5" Column="101" />
+      <File FileName="Startup.cs" Line="31" Column="25" />
+      <File FileName="Controllers/HomeController.cs" Line="51" Column="53" />
+      <File FileName="Models/InstitutionDetails.cs" Line="11" Column="36" />
+      <File FileName="Views/Home/About.cshtml" Line="26" Column="7" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.cSarpProject PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>

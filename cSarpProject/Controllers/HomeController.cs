@@ -8,7 +8,23 @@ namespace cSarpProject.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+
+		/**
+
+        private readonly TestContext _context;
+        public HomeController (TestContext)
+        
+
+        */
+        //connect with database
+		private readonly TestContext _context;
+		public HomeController(TestContext context)
+		{
+			_context = context;
+		}
+
+
+		public IActionResult Index()
         {
             return View();
         }
@@ -19,11 +35,30 @@ namespace cSarpProject.Controllers
 
             return View();
         }
-
+		/***
         public IActionResult About()
         {
             return View();
         }
+        ****/
+
+
+
+		public IActionResult About()
+		{
+			ViewData["Message"] = "Your application description page.";
+			var test = _context.InstitutionDetails.FirstOrDefault();
+			InstitutionDetails model = new InstitutionDetails
+			{
+				Id = test.Id,
+				Name = test.Name
+
+			};
+
+			return View(model);
+
+			//return View();
+		}
 
 		public IActionResult Login()
 		{
