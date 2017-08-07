@@ -17,12 +17,13 @@ namespace cSarpProject.Controllers
 
         */
         //connect with database
+        /****
 		private readonly TestContext _context;
 		public HomeController(TestContext context)
 		{
 			_context = context;
 		}
-
+****/
 
 		public IActionResult Index()
         {
@@ -47,6 +48,7 @@ namespace cSarpProject.Controllers
 		public IActionResult About()
 		{
 			ViewData["Message"] = "Your application description page.";
+            /****
 			var test = _context.InstitutionDetails.FirstOrDefault();
 			InstitutionDetails model = new InstitutionDetails
 			{
@@ -55,7 +57,9 @@ namespace cSarpProject.Controllers
 
 			};
 
-			return View(model);
+***/
+
+			return View();
 
 			//return View();
 		}

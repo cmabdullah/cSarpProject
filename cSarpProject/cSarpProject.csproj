@@ -27,4 +27,7 @@
     <Folder Include="Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Data\abcContext.cs" />
+  </ItemGroup>
 </Project>

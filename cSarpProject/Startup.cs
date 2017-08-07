@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
+using cSarpProject.Data;
 
 namespace cSarpProject
 {
@@ -29,8 +31,11 @@ namespace cSarpProject
         {
             // Add framework services.
             //connection
-            services.AddMvc();
-			services.AddDbContext<TestContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+			services.AddMvc();
+
+			services.AddDbContext
+                    <TestContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
