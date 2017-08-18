@@ -12,14 +12,15 @@ namespace cSarpProject.Data
 	{
 
 		public TestContext(DbContextOptions<TestContext> options)
-			: base(options)
-		{
+			: base(options){
 		}
-
+		public DbSet<cSarpProject.Models.Teacher> Teacher { get; set; }
 		public DbSet<cSarpProject.Models.Students> Students { get; set; }
+       
       
-
-
 	}
+
+
+
 
 }

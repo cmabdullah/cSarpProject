@@ -23,6 +23,7 @@ namespace cSarpProject.Controllers
 		public HomeController(TestContext context)
 		{
 			_context = context;
+
 		}
 
 
@@ -33,31 +34,32 @@ namespace cSarpProject.Controllers
    
         public IActionResult PhotoGallary()
         {
+			/**
             ViewData["Message"] = "Your application description page.";
-
-
 			var test = _context.Students.ToList();
-			StudentList studentModel = new StudentList
-			{
+			StudentList studentModel = new StudentList{
 				StudentAll = test
 			};
             return View();
+            **/
+
+
+			var test = _context.Students.ToList();
+			PhotoGallary cm = new PhotoGallary
+			{
+				StudentAll = test
+			};
+			return View(cm);
         }
 
 		public IActionResult About()
 		{
-			ViewData["Message"] = "Your application description page.";
-            /**
-			var test = _context.InstitutionDetails.FirstOrDefault();
-			InstitutionDetails model = new InstitutionDetails
+			var aaa = _context.Teacher.ToList();
+			PhotoGallary1 cm = new PhotoGallary1
 			{
-				Id = test.Id,
-				Name = test.Name
-
+				StudentAll1 = aaa
 			};
-			***/
-			return View();
-			//return View();
+			return View(cm);
 		}
 
 
@@ -66,13 +68,10 @@ namespace cSarpProject.Controllers
 		public IActionResult StudentsList()
 		{
 			var test = _context.Students.ToList();
-			StudentList studentModel = new StudentList
-			{
-
+			StudentList cm = new StudentList{
 				StudentAll = test
 			};
-
-			return View(studentModel);
+			return View(cm);
 		}
 
 

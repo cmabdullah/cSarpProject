@@ -8,20 +8,16 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace cSarpProject.Models{
     
-public class Students
+public class Teacher
 	{
 		public Int32 Id { get; set; }
 		public string Name { get; set; }
-        public string Program { get; set; }
+        public string Department { get; set; }
 	}
-	public class StudentList
+	public class PhotoGallary1
 	{
-		public List<Students> StudentAll { get; set; }
+		public List<Teacher> StudentAll1 { get; set; }
 
 	}
-	public class PhotoGallary
-	{
-		public List<Students> StudentAll { get; set; }
 
-	}
 }
