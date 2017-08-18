@@ -55,8 +55,7 @@ namespace cSarpProject.Controllers
 		public IActionResult About()
 		{
 			var aaa = _context.Teacher.ToList();
-			PhotoGallary1 cm = new PhotoGallary1
-			{
+			PhotoGallary1 cm = new PhotoGallary1{
 				StudentAll1 = aaa
 			};
 			return View(cm);
@@ -108,5 +107,7 @@ namespace cSarpProject.Controllers
         {
             return View();
         }
+
+
     }
 }
