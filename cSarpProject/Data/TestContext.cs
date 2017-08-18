@@ -16,8 +16,10 @@ namespace cSarpProject.Data
 		{
 		}
 
-		public DbSet<cSarpProject.Models.InstitutionDetails> InstitutionDetails { get; set; }
+		public DbSet<cSarpProject.Models.Students> Students { get; set; }
+      
 
 
 	}
+
 }

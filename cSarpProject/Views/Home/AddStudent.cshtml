@@ -1,0 +1,29 @@
+﻿
+@model cSarpProject.Models.Students
+
+<h2>Add Student</h2>
+<form asp-controller="Admin" asp-action="SaveTeacher" class="panel panel-body" method="post">
+    <div class="form-group">
+        <div class="col-sm-6">
+
+            <label>ID</label>
+           
+            <input name="Id" type="text" class="form-control">
+            <label>Name</label>
+           
+            <input name="Name" type="text" class="form-control">
+            
+            <label>Program</label>
+            <input type="text" name="Program" class="form-control">
+
+            <br/>
+            <div class="col-md-offset-2 col-md-10">
+                <input asp-action="SaveStudent" type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+       
+    </div>
+   
+   
+   
+</form>
