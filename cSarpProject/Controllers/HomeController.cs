@@ -104,10 +104,7 @@ namespace cSarpProject.Controllers
         }
 
 
-		public IActionResult JoinList()
-		{
-			return View();
-		}
+
 
 		//Salary1
 

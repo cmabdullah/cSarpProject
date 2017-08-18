@@ -29,7 +29,15 @@ namespace cSarpProject.Controllers
 			return View(cm);
         }
 
-
+		public IActionResult Salary()
+		{
+			var aaa = _context.Salary.ToList();
+			EClassSalary cm = new EClassSalary
+			{
+				SalaryF = aaa
+			};
+			return View(cm);
+		}
 		
         public IActionResult Attendence()
 		{

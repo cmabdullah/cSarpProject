@@ -1,10 +1,11 @@
 ﻿@{
-  Layout = "_Layout_admin";
+  Layout = "_Layout_accounce";
 }
 ﻿
 
 
-@model cSarpProject.Models.EClass
+
+@model cSarpProject.Models.EClassSalary
 
 
 
@@ -14,19 +15,23 @@
             <thead>
                 <tr>
                     <th>Id</th>
-                    <th>FirstName</th>
-                    <th>LastName</th>
+                    <th>Basic</th>
+                    <th>House Rent</th>
+					<th>Medical</th>
+					<th>Bonus</th>
 
 
                 </tr>
             </thead>
             <tbody>
-                @foreach (var data in Model.StudentF)
+                @foreach (var data in Model.SalaryF)
                 {
                     <tr title="Click Here to See Details">
                         <td class="showDetails pointer">@data.Id</td>
-                        <td class="showDetails pointer">@data.FirstName</td>
-                        <td class="showDetails pointer">@data.LastName</td>
+                        <td class="showDetails pointer">@data.Basic</td>
+                        <td class="showDetails pointer">@data.HouseRent</td>
+					<td class="showDetails pointer">@data.Medical</td>
+					<td class="showDetails pointer">@data.Bonus</td>
 
     
 

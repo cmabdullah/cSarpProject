@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{43DAA3A7-3480-4FB5-A1BE-52ED579CD2EA}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/HomeController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Shared/_Layout_accounce.cshtml">
     <Files>
       <File FileName="appsettings.json" Line="11" Column="69" />
       <File FileName="Views/Home/StudentsList.cshtml" Line="29" Column="7" />
       <File FileName="Views/Home/AddStudent.cshtml" Line="29" Column="8" />
       <File FileName="Models/Students.cs" Line="22" Column="1" />
-      <File FileName="Data/TestContext.cs" Line="20" Column="50" />
-      <File FileName="Controllers/HomeController.cs" Line="115" Column="6" />
+      <File FileName="Data/TestContext.cs" Line="21" Column="56" />
+      <File FileName="Controllers/HomeController.cs" Line="6" Column="1" />
       <File FileName="Views/Home/PhotoGallary.cshtml" Line="2" Column="40" />
       <File FileName="Models/Teacher.cs" Line="19" Column="35" />
       <File FileName="Startup.cs" Line="1" Column="1" />
@@ -16,12 +16,16 @@
       <File FileName="Views/Home/Contact.cshtml" Line="1" Column="1" />
       <File FileName="Views/Accounce/Index.cshtml" Line="49" Column="7" />
       <File FileName="Models/Employee.cs" Line="30" Column="1" />
-      <File FileName="Controllers/AdminController.cs" Line="1" Column="1" />
+      <File FileName="Controllers/AdminController.cs" Line="25" Column="1" />
       <File FileName="Views/Shared/_Layout.cshtml" Line="41" Column="92" />
-      <File FileName="Views/Home/JoinList.cshtml" Line="43" Column="7" />
-      <File FileName="Controllers/AccounceController.cs" Line="31" Column="1" />
-      <File FileName="Program.cs" Line="21" Column="1" />
+      <File FileName="Controllers/AccounceController.cs" Line="48" Column="4" />
+      <File FileName="Program.cs" Line="25" Column="1" />
       <File FileName="Views/Accounce/Join.cshtml" Line="1" Column="1" />
+      <File FileName="Models/Employee1.cs" Line="13" Column="16" />
+      <File FileName="Views/Admin/Index.cshtml" Line="38" Column="7" />
+      <File FileName="Models/Salary.cs" Line="22" Column="36" />
+      <File FileName="Views/Accounce/Salary.cshtml" Line="27" Column="52" />
+      <File FileName="Views/Shared/_Layout_accounce.cshtml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
