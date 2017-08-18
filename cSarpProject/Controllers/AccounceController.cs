@@ -23,26 +23,15 @@ namespace cSarpProject.Controllers
         public IActionResult Index()
         {
 			var aaa = _context.Employee.ToList();
-			PhotoGallary12 cm = new PhotoGallary12
-			{
+			PhotoGallary12 cm = new PhotoGallary12{
 				StudentAll12 = aaa
 			};
 			return View(cm);
         }
 
 
-
-
-		public IActionResult Salary()
-		{
-			var aaa = _context.Salary.ToList();
-			PhotoGallary113 cm = new PhotoGallary113
-			{
-				StudentAll113 = aaa
-			};
-			return View(cm);
-		}
-		public IActionResult Attendence()
+		
+        public IActionResult Attendence()
 		{
 			return View();
 		}

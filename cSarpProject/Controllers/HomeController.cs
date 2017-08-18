@@ -96,17 +96,20 @@ namespace cSarpProject.Controllers
 				db.Students.Add(std);
 				db.SaveChanges();
 			}
-			return RedirectToAction("StudentsList");
+			return RedirectToAction("Index");
 		}
 
-
-
-
-
-        public IActionResult Error()
-        {
+        public IActionResult Error(){
             return View();
         }
+
+
+		public IActionResult JoinList()
+		{
+			return View();
+		}
+
+		//Salary1
 
 
     }

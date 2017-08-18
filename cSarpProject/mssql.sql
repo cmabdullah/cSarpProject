@@ -312,3 +312,25 @@ GO
 SELECT e.Id, e.FirstName ,e.LastName,e.PermanentAddress,e.PresentAddress,e.ContactAddress,e.ContactMail,e.ContactNo,e.Phone
 FROM dbo.Employee as e
 GO
+
+
+CREATE TABLE Salary1 (
+    sId   INT  NOT NULL   PRIMARY KEY,
+    Basic   [NVARCHAR](50) NOT NULL,
+    Medical [nvarchar](50) NULL,
+    HouseRent [nvarchar](50) NULL,
+    Education [nvarchar](50) NULL,
+    Bonus [nvarchar](50) NULL
+)
+GO
+
+INSERT INTO Salary1
+   ([sId],[Basic],[Medical],[HouseRent],[Education],[Bonus])
+VALUES
+   ( 2001, N'20000',N'2000', N'8000',N'5000', N'20000 '),
+   ( 2002, N'30000',N'3000', N'9000',N'5000', N'30000 ')
+GO 
+
+SELECT e.sId, e.Basic ,e.Medical,e.HouseRent,e.Education,e.Bonus
+FROM dbo.Salary1 as e
+GO
