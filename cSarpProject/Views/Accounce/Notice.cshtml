@@ -1,22 +1,32 @@
 ﻿@{
   Layout = "_Layout_accounce";
 }
-﻿
-
- <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">About Meeting</a></li>
-    <li><a href="#">About Seminner</a></li>
-  </ul>
-</div> 
-
-<div class="container">
-  <form>
+@model cSarpProject.Models.Notice
+﻿<h2>Add Student</h2>
+<form asp-controller="Accounce" asp-action="SaveTeacher" class="panel panel-body" method="post">
     <div class="form-group">
-      <label for="comment">Comment:</label>
-      <textarea class="form-control" rows="5" id="comment"></textarea>
+        <div class="col-sm-6">
+
+            <label>ID</label>
+           
+            <input name="Id" type="text" class="form-control">
+            <label>NoticeType</label>
+           
+            <input name="NoticeType" type="text" class="form-control">
+            
+            <label>NoticeName</label>
+            <input type="text" name="NoticeName" class="form-control">
+                        <label>NoticeDate</label>
+            <input type="text" name="NoticeDate" class="form-control">
+
+            <br/>
+            <div class="col-md-offset-2 col-md-10">
+                <input asp-action="SaveNotice" type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+       
     </div>
-  </form>
-</div>
+   
+   
+   
+</form>

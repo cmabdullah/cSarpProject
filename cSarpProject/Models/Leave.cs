@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,23 +9,22 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace cSarpProject.Models{
     
-public class Salary
+public class Leave
 	{
 		public Int32 Id { get; set; }
-		public string Basic { get; set; }
-        public string HouseRent { get; set; }
+		public string CasualLeave { get; set; }
+        public string StudyLeave { get; set; }
         public string Medical { get; set; }
-        public string Bonus { get; set; }
 
 	}
-	public class EClassSalary
+	public class EClassLeave
 	{
-        public List<Salary> SalaryF { get; set; }
+        public List<Leave> LeaveF { get; set; }
 
 	}
-	public class EClassSalaryT
+	public class EClassLeaveT
 	{
-		public List<Salary> SalaryFT { get; set; }
+		public List<Leave> LeaveFT { get; set; }
 
 	}
 

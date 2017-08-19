@@ -290,14 +290,14 @@ GO
 
 CREATE TABLE Employee (
     Id   INT  NOT NULL   PRIMARY KEY,
-    FirstName   [NVARCHAR](50) NOT NULL,
+    FirstName   [NVARCHAR](40) NOT NULL,
     LastName [nvarchar](50) NULL,
     PermanentAddress [nvarchar](50) NULL,
     PresentAddress [nvarchar](50) NULL,
     ContactAddress [nvarchar](50) NULL,
     ContactMail [nvarchar](50) NULL,
     ContactNo [nvarchar](50) NULL,
-    Phone [nvarchar](50) NULL
+    Phone [nvarchar](5) NULL
 )
 GO
 
@@ -305,8 +305,8 @@ GO
 INSERT INTO Employee
    ([Id],[FirstName],[LastName],[PermanentAddress],[PresentAddress],[ContactAddress],[ContactMail],[ContactNo],[Phone])
 VALUES
-   ( 2001, N'C M ',N'Abdullah', N'Amtali',N'Bonosree', N'rampura ',N'a.kium.khan@gmail.com', N'+8801717',N'+880171724'),
-   ( 2002, N'Mainul',N'Hasan', N'Mohakhali',N'Gulsan', N'Malibag ',N'mainul@gmail.com', N'+880197',N'+880191724')
+   ( 2, N'C M ',N'Abdullah', N'Amtali',N'Bonosree', N'rampura ',N'a.kium.khan@gmail.com', N'+8801717',N'+880'),
+   ( 3, N'Mainul',N'Hasan', N'Mohakhali',N'Gulsan', N'Malibag ',N'mainul@gmail.com', N'+880197',N'+88')
 GO 
 
 SELECT e.Id, e.FirstName ,e.LastName,e.PermanentAddress,e.PresentAddress,e.ContactAddress,e.ContactMail,e.ContactNo,e.Phone
@@ -314,23 +314,62 @@ FROM dbo.Employee as e
 GO
 
 
-CREATE TABLE Salary1 (
-    sId   INT  NOT NULL   PRIMARY KEY,
-    Basic   [NVARCHAR](50) NOT NULL,
-    Medical [nvarchar](50) NULL,
+CREATE TABLE Employee1 (
+    Id   INT  NOT NULL   PRIMARY KEY,
+    FirstName   [NVARCHAR](40) NOT NULL,
+    LastName [nvarchar](50) NULL
+)
+GO
+INSERT INTO Employee1
+   ([Id],[FirstName],[LastName])
+VALUES
+   ( 2, N'C M ',N'Abdullah'),
+   ( 3, N'Mainul',N'Hasan')
+GO 
+
+SELECT e.Id, e.FirstName ,e.LastName
+FROM dbo.Employee1 as e
+GO
+
+
+--salary
+CREATE TABLE Salary (
+    Id   INT  NOT NULL   PRIMARY KEY,
+    Basic   [NVARCHAR](40) NOT NULL,
     HouseRent [nvarchar](50) NULL,
-    Education [nvarchar](50) NULL,
+    Medical [nvarchar](50) NULL,
     Bonus [nvarchar](50) NULL
 )
 GO
 
-INSERT INTO Salary1
-   ([sId],[Basic],[Medical],[HouseRent],[Education],[Bonus])
+INSERT INTO Salary
+   ([Id],[Basic],[HouseRent],[Medical],[Bonus])
 VALUES
-   ( 2001, N'20000',N'2000', N'8000',N'5000', N'20000 '),
-   ( 2002, N'30000',N'3000', N'9000',N'5000', N'30000 ')
+   ( 2, N'20000',N'5000',N'10000',N'20000'),
+   ( 3, N'30000',N'6000',N'15000',N'30000')
 GO 
 
-SELECT e.sId, e.Basic ,e.Medical,e.HouseRent,e.Education,e.Bonus
-FROM dbo.Salary1 as e
+SELECT e.Id, e.Basic ,e.HouseRent,e.Medical,e.Bonus
+FROM dbo.Salary as e
+GO
+
+
+--leave
+CREATE TABLE Leave (
+    Id   INT  NOT NULL   PRIMARY KEY,
+    CasualLeave   [NVARCHAR](40) NOT NULL,
+    StudyLeave [nvarchar](50) NULL,
+    Medical [nvarchar](50) NULL
+)
+GO
+
+
+INSERT INTO Leave
+   ([Id],[CasualLeave],[StudyLeave],[Medical])
+VALUES
+   ( 2, N'25d',N'5y',N'2m')
+GO 
+
+SELECT e.Id, e.CasualLeave ,e.StudyLeave,e.Medical
+FROM dbo.Leave as e
 GO

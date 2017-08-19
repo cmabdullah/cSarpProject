@@ -26,4 +26,11 @@ public class Employee
 
 	}
 
+
+	public class PhotoGallary123
+	{
+		public List<Employee> StudentAll123 { get; set; }
+
+	}
+
 }

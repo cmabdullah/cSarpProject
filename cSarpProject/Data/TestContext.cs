@@ -19,6 +19,8 @@ namespace cSarpProject.Data
         public DbSet<cSarpProject.Models.Employee> Employee { get; set; }
 		public DbSet<cSarpProject.Models.Employee1> Employee1 { get; set; }
         public DbSet<cSarpProject.Models.Salary> Salary { get; set; }
+        public DbSet<cSarpProject.Models.Leave> Leave { get; set; }
+        public DbSet<cSarpProject.Models.Notice> Notice { get; set; }
 
   
        

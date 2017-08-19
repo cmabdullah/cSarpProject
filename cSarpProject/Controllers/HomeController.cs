@@ -85,13 +85,13 @@ namespace cSarpProject.Controllers
 
 
 
-		public IActionResult SaveStudent([Bind("Id,Name, Program")]Students students){
+		public IActionResult SaveStudent([Bind("Id,Name, Program")]Students obj){
 			using (var db = _context){
 
 				var std = new Students{
-					Id = students.Id,
-					Name = students.Name,
-					Program = students.Program
+					Id = obj.Id,
+					Name = obj.Name,
+					Program = obj.Program
 				};
 				db.Students.Add(std);
 				db.SaveChanges();

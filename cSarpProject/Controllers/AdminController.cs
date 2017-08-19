@@ -40,7 +40,12 @@ namespace cSarpProject.Controllers
 
 		public IActionResult UpdateAdBio()
 		{
-			return View();
+			var aaa = _context.Notice.ToList();
+			EClassNoticeA cm = new EClassNoticeA
+			{
+				NoticeFA = aaa
+			};
+			return View(cm);
 		}
 		public IActionResult Log()
 		{
