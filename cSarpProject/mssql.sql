@@ -373,3 +373,125 @@ GO
 SELECT e.Id, e.CasualLeave ,e.StudyLeave,e.Medical
 FROM dbo.Leave as e
 GO
+
+USE TestDb
+
+--leave
+CREATE TABLE Notice (
+    Id   INT  NOT NULL   PRIMARY KEY,
+    NoticeType   [NVARCHAR](40) NOT NULL,
+    NoticeName [nvarchar](50) NULL,
+    NoticeDate [nvarchar](50) NULL
+)
+GO
+
+
+INSERT INTO Notice
+   ([Id],[NoticeType],[NoticeName],[NoticeDate])
+VALUES
+   ( 11, N'Meeting',N'About Exm time schaduling',N'10/8/2017')
+GO 
+
+SELECT e.Id, e.NoticeType ,e.NoticeName,e.NoticeDate
+FROM dbo.Notice as e
+GO
+
+
+
+
+--database for mainul
+USE TutorialDB
+
+
+--Teacher table
+
+
+CREATE TABLE Student (
+    Id   INT  NOT NULL   PRIMARY KEY,
+    Name   [NVARCHAR](40) NOT NULL,
+    StudentID [nvarchar](50) NULL,
+    Program [nvarchar](50) NULL,
+    Section [nvarchar](50) NULL,
+    Blood [nvarchar](50) NULL,
+    Mobile [nvarchar](50) NULL,
+    PermanentAddress [nvarchar](50) NULL,
+    GuardianName [nvarchar](50) NULL
+)
+GO
+
+INSERT INTO Student
+   ([Id],[Name],[StudentID],[Program],[Section],[Blood],[Mobile],[PermanentAddress],[GuardianName])
+VALUES
+   ( 3, N'Mainul',N'1015', N'CSE',N'D', N'o+ ',N'+0199', N'+Malibug',N'Md. Al Mamun')
+GO 
+
+SELECT e.Id, e.Name ,e.StudentID,e.Program,e.Section,e.Blood,e.Mobile,e.PermanentAddress,e.GuardianName
+FROM dbo.Student as e
+GO
+
+
+
+
+
+
+--salary
+CREATE TABLE Salary (
+    Id   INT  NOT NULL   PRIMARY KEY,
+    Basic   [NVARCHAR](40) NOT NULL,
+    HouseRent [nvarchar](50) NULL,
+    Medical [nvarchar](50) NULL,
+    Bonus [nvarchar](50) NULL
+)
+GO
+
+INSERT INTO Salary
+   ([Id],[Basic],[HouseRent],[Medical],[Bonus])
+VALUES
+   ( 2, N'20000',N'5000',N'10000',N'20000'),
+   ( 3, N'30000',N'6000',N'15000',N'30000')
+GO 
+
+SELECT e.Id, e.Basic ,e.HouseRent,e.Medical,e.Bonus
+FROM dbo.Salary as e
+GO
+
+
+
+--ResultLog
+CREATE TABLE ResultLog (
+    Id   INT  NOT NULL   PRIMARY KEY,
+    StudentId  [NVARCHAR](40) NOT NULL,
+    SeassonGread [nvarchar](50) NULL,
+)
+GO
+
+INSERT INTO ResultLog
+   ([Id],[StudentId],[SeassonGread])
+VALUES
+   ( 2, N'1510',N'A'),
+   ( 3, N'1512',N'A')
+GO 
+
+SELECT e.Id, e.StudentId ,e.SeassonGread
+FROM dbo.ResultLog as e
+GO
+
+
+--TutionFee
+CREATE TABLE ResultLog (
+    Id   INT  NOT NULL   PRIMARY KEY,
+    StudentId  [NVARCHAR](40) NOT NULL,
+    SeassonGread [nvarchar](50) NULL,
+)
+GO
+
+INSERT INTO ResultLog
+   ([Id],[StudentId],[SeassonGread])
+VALUES
+   ( 2, N'1510',N'A'),
+   ( 3, N'1512',N'A')
+GO 
+
+SELECT e.Id, e.StudentId ,e.SeassonGread
+FROM dbo.ResultLog as e
+GO

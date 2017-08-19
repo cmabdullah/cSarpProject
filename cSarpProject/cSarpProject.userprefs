@@ -1,46 +1,5 @@
 ﻿<Properties StartupConfiguration="{43DAA3A7-3480-4FB5-A1BE-52ED579CD2EA}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Admin/UpdateAdBio.cshtml">
-    <Files>
-      <File FileName="appsettings.json" Line="11" Column="69" />
-      <File FileName="Views/Home/StudentsList.cshtml" Line="29" Column="7" />
-      <File FileName="Views/Home/AddStudent.cshtml" Line="2" Column="1" />
-      <File FileName="Models/Students.cs" Line="22" Column="1" />
-      <File FileName="Data/TestContext.cs" Line="23" Column="56" />
-      <File FileName="Controllers/HomeController.cs" Line="88" Column="1" />
-      <File FileName="Views/Home/PhotoGallary.cshtml" Line="32" Column="9" />
-      <File FileName="Models/Teacher.cs" Line="19" Column="35" />
-      <File FileName="Startup.cs" Line="1" Column="1" />
-      <File FileName="Models/InstitutionDetails.cs" Line="14" Column="16" />
-      <File FileName="Controllers/TeacherController.cs" Line="57" Column="38" />
-      <File FileName="Views/Home/About.cshtml" Line="2" Column="1" />
-      <File FileName="Views/Home/Contact.cshtml" Line="1" Column="1" />
-      <File FileName="Views/Accounce/Index.cshtml" Line="8" Column="1" />
-      <File FileName="Models/Employee.cs" Line="32" Column="38" />
-      <File FileName="Controllers/AdminController.cs" Line="25" Column="1" />
-      <File FileName="Views/Shared/_Layout.cshtml" Line="45" Column="67" />
-      <File FileName="Controllers/AccounceController.cs" Line="82" Column="1" />
-      <File FileName="Program.cs" Line="21" Column="1" />
-      <File FileName="Views/Accounce/Join.cshtml" Line="5" Column="1" />
-      <File FileName="Models/Employee1.cs" Line="13" Column="16" />
-      <File FileName="Views/Admin/Index.cshtml" Line="38" Column="7" />
-      <File FileName="Models/Salary.cs" Line="27" Column="31" />
-      <File FileName="Views/Accounce/Salary.cshtml" Line="43" Column="7" />
-      <File FileName="Views/Shared/_Layout_accounce.cshtml" Line="1" Column="1" />
-      <File FileName="Models/Leave.cs" Line="27" Column="29" />
-      <File FileName="Views/Accounce/Leave.cshtml" Line="38" Column="7" />
-      <File FileName="Views/Home/JoinList.cshtml" Line="1" Column="1" />
-      <File FileName="Models/Notice.cs" Line="24" Column="28" />
-      <File FileName="Views/Accounce/Notice.cshtml" Line="24" Column="46" />
-      <File FileName="Views/Teacher/Index.cshtml" Line="28" Column="58" />
-      <File FileName="Views/Shared/_Layout_teacher.cshtml" Line="33" Column="64" />
-      <File FileName="Views/Home/Index.cshtml" Line="87" Column="47" />
-      <File FileName="Views/Teacher/Salary.cshtml" Line="6" Column="1" />
-      <File FileName="Views/Teacher/Leave.cshtml" Line="24" Column="52" />
-      <File FileName="Views/Teacher/Notice.cshtml" Line="39" Column="7" />
-      <File FileName="Views/Shared/_Layout_admin.cshtml" Line="36" Column="86" />
-      <File FileName="Views/Admin/UpdateAdBio.cshtml" Line="41" Column="7" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
